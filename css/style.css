@@ -3,5 +3,21 @@
 }
 
 .container {
-    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(https://us-tuna-sounds-images.voicemod.net/545a1e54-8bb0-43c3-ad27-5bf885f01646.png);
+    background-image: cover;
+    align-items: center;
+}
+
+.box_central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    color: yellow;
+    height: 100px;
+    padding: 5px 10px;
+    border-radius: 5%;
 }

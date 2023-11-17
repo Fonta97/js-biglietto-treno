@@ -6,22 +6,20 @@ console.log(wthIsAKilometer, userAge)
 
 
 // dichiarazione variabili costanti prezzo per km e scontistiche in base all'età
-var priceKm = (wthIsAKilometer * 0.21)
-var discount
+let priceKm = (wthIsAKilometer * 0.21)
+let discount
 if (userAge < 18) {
     discount = 0.8
+} else if (userAge > 65) {
+    discount = 0.6
 } else {
-    if (userAge > 65) {
-        discount = 0.6
-    } else {
-        discount = 1
-    }
+    discount = 1
 }
 
 console.log(priceKm, discount)
 
-let finalPrice = priceKm * discount;
+let finalPrice = parseFloat(priceKm * discount).toFixed(2)
 
 console.log(finalPrice)
 
-document.getElementById("ticket_price").innerHTML = "PAGAH:" + finalPrice;
+document.getElementById("ticket_price").innerHTML = "PAGAH:" + finalPrice + "€";
